@@ -1,3 +1,4 @@
+# Дмитрий Итигин, 9-я когорта — Финальный проект. Инженер по тестированию плюс
 import sender_stand_request
 
 def test_get_order_info_success_response():
