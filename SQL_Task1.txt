@@ -1,0 +1,6 @@
+SELECT crs.login,
+COUNT(*) AS orders_number
+FROM "Couriers" AS crs
+LEFT JOIN "Orders" AS ord ON crs.id=ord."courierId"
+WHERE ord."inDelivery"=TRUE
+GROUP BY crs.login;
